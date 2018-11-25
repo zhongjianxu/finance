@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appMsg>
+    <appHeader>
+        <GWTradeCode>WNCGBXML020</GWTradeCode>
+        <GWInstId>30000050</GWInstId>
+        <GWVersion>1.0.0</GWVersion>
+        <GWRespTime>20181122203033128</GWRespTime>
+        <GWSenderSN>201811222030331281502177</GWSenderSN>
+        <GWErrorCode>000000</GWErrorCode>
+        <GWErrorMsg>处理成功</GWErrorMsg>
+    </appHeader>
+    <appBody>
+        <resCode>000000</resCode>
+        <resMsg>处理成功</resMsg>
+        <flowNo>2018112220032667343389</flowNo>
+        <num>1</num>
+        <Items>
+            <thirdCoupNo>5856777866</thirdCoupNo>
+            <result>000000</result>
+        </Items>
+    </appBody>
+</appMsg>
