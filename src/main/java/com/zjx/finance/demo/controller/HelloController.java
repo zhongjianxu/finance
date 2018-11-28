@@ -9,10 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-	@RequestMapping("/index")
-	public String hello() {
-		return "Hello World!";
-	}
 	@RequestMapping("/getMap")
 	public Map<Object, Object> getMap() {
 		Map<Object, Object> m = new HashMap<>();

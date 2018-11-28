@@ -10,9 +10,12 @@ import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class XMLDemo {
 
+	private final static Logger logger=LoggerFactory.getLogger(XMLDemo.class);
 public static void parserNode(Element ele,HashMap<String, Object> map){
 		
 		System.out.println(ele.getName()+":"+ele.getText().trim());
@@ -50,6 +53,7 @@ public static void parserNode(Element ele,HashMap<String, Object> map){
 				+ "<flowNo>2018112220032667343389</flowNo><num>1</num><Items>"
 				+ "<thirdCoupNo>5856777866</thirdCoupNo><result>000000</result>" + "</Items></appBody></appMsg>\r\n";
 		HashMap<String, Object> map=getVal(xmlStr);
+		logger.info("map="+map);
 		System.out.println(map);
 	}
 	
@@ -69,5 +73,7 @@ public static void parserNode(Element ele,HashMap<String, Object> map){
 		parserNode(ele,map);
 		return map;
 	}
+	
+	
 
 }
